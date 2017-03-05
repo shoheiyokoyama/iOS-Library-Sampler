@@ -1,0 +1,22 @@
+PODS:
+  - SwiftTask (5.0.0)
+
+DEPENDENCIES:
+  - SwiftTask (from `https://github.com/ReactKit/SwiftTask`, branch `swift/3.0`)
+
+EXTERNAL SOURCES:
+  SwiftTask:
+    :branch: swift/3.0
+    :git: https://github.com/ReactKit/SwiftTask
+
+CHECKOUT OPTIONS:
+  SwiftTask:
+    :commit: 98f89883509d27229d60ff3f2ececdd82a46d674
+    :git: https://github.com/ReactKit/SwiftTask
+
+SPEC CHECKSUMS:
+  SwiftTask: 7fcd92f8ac16876e82c0e4ced0cea7e028456b6b
+
+PODFILE CHECKSUM: 5da20ac78c96727becfa98fd347c54b3398c9255
+
+COCOAPODS: 1.2.0
