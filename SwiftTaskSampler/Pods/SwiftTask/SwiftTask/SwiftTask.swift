@@ -390,6 +390,7 @@ open class Task<Progress, Value, Error>: Cancellable, CustomStringConvertible
     
     public func then<Value2, C: Canceller>(_ canceller: inout C?, _ thenClosure: @escaping (Value?, ErrorInfo?) -> Value2) -> Task<Progress, Value2, Error>
     {
+        //新しいインスタンスをbindして状態を受け継ぐため
         return self.then(&canceller) { (value, errorInfo) -> Task<Progress, Value2, Error> in
             return Task<Progress, Value2, Error>(value: thenClosure(value, errorInfo))
         }

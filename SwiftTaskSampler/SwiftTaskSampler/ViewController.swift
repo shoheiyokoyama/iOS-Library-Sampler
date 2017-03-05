@@ -19,24 +19,22 @@ class ViewController: UIViewController {
    
     func taskTest() {
         let task = Task<Void, String, Error> { progress, fulfill, reject, configure in
-            fulfill("OK")
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+                fulfill("OK")
+            }
         }
         .then { string -> Bool in
             print(string)
             return true
         }
+            /*
         .then { bool -> Int in
             print(bool)
             return 1
         }
         .then { int -> Void in
             print(int)
-        }
-        
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
-            //task.resume()
-        }
+        }*/
     }
 }
 

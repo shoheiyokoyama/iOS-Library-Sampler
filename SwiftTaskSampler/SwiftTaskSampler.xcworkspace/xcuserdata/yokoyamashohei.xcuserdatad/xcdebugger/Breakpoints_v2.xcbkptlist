@@ -10,7 +10,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTaskSampler/ViewController.swift"
-            timestampString = "510373096.90585"
+            timestampString = "510374559.424698"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "taskTest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftTask/SwiftTask/SwiftTask.swift"
+            timestampString = "510385033.322331"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "423"
+            endingLineNumber = "423"
+            landmarkName = "then(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftTaskSampler/ViewController.swift"
+            timestampString = "510385054.943275"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -25,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftTaskSampler/ViewController.swift"
-            timestampString = "510373098.180244"
+            filePath = "Pods/SwiftTask/SwiftTask/SwiftTask.swift"
+            timestampString = "510385227.58609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "taskTest()"
+            startingLineNumber = "443"
+            endingLineNumber = "443"
+            landmarkName = "_then(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftTaskSampler/ViewController.swift"
-            timestampString = "510373099.294428"
+            filePath = "Pods/SwiftTask/SwiftTask/_StateMachine.swift"
+            timestampString = "510385275.260072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "taskTest()"
+            startingLineNumber = "255"
+            endingLineNumber = "255"
+            landmarkName = "append(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +89,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftTaskSampler/ViewController.swift"
-            timestampString = "510373100.564306"
+            filePath = "Pods/SwiftTask/SwiftTask/SwiftTask.swift"
+            timestampString = "510385384.592184"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "taskTest()"
+            startingLineNumber = "434"
+            endingLineNumber = "434"
+            landmarkName = "then(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
