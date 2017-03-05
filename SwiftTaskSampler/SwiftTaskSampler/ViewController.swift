@@ -13,14 +13,30 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        taskTest()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   
+    func taskTest() {
+        let task = Task<Void, String, Error> { progress, fulfill, reject, configure in
+            fulfill("OK")
+        }
+        .then { string -> Bool in
+            print(string)
+            return true
+        }
+        .then { bool -> Int in
+            print(bool)
+            return 1
+        }
+        .then { int -> Void in
+            print(int)
+        }
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            //task.resume()
+        }
     }
-
-
 }
 
