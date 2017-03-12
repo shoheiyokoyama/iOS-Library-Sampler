@@ -134,6 +134,7 @@ open class Task<Progress, Value, Error>: Cancellable, CustomStringConvertible
         
         let _initClosure: _InitClosure = { _, progress, fulfill, _reject, configure in
             // NOTE: don't expose rejectHandler with ErrorInfo (isCancelled) for public init
+            //ここが呼び出されると呼び出し元のタスが呼び出される
             initClosure(progress, fulfill, { error in _reject(ErrorInfo(error: Optional(error), isCancelled: false)) }, configure)
         }
         
@@ -168,7 +169,9 @@ open class Task<Progress, Value, Error>: Cancellable, CustomStringConvertible
     public convenience init(value: Value)
     {
         self.init(initClosure: { progress, fulfill, reject, configure in
-            fulfill(value)
+            //ここではcompletionHandlerが登録されてないので発火しない
+            //一つ前のタスクが終わったら呼ばれる
+            fulfill(value)//次のタスクに伝達
         })
         self.name = "FulfilledTask"
     }
@@ -392,6 +395,7 @@ open class Task<Progress, Value, Error>: Cancellable, CustomStringConvertible
     {
         //新しいインスタンスをbindして状態を受け継ぐため
         return self.then(&canceller) { (value, errorInfo) -> Task<Progress, Value2, Error> in
+            //ここで初めて次のタスクのタスクが呼び出される
             return Task<Progress, Value2, Error>(value: thenClosure(value, errorInfo))
         }
     }
@@ -420,6 +424,7 @@ open class Task<Progress, Value, Error>: Cancellable, CustomStringConvertible
     ///
     public func then<Progress2, Value2, Error2, C: Canceller>(_ canceller: inout C?, _ thenClosure: @escaping (Value?, ErrorInfo?) -> Task<Progress2, Value2, Error2>) -> Task<Progress2, Value2, Error2>
     {
+        
         return Task<Progress2, Value2, Error2> { [unowned self, weak canceller] newMachine, progress, fulfill, _reject, configure in
             
             //
@@ -431,8 +436,9 @@ open class Task<Progress, Value, Error>: Cancellable, CustomStringConvertible
             //
             let selfMachine = self._machine
             
+            ///ここでタスクの登録を行う
             self._then(&canceller) {
-                let innerTask = thenClosure(selfMachine.value.rawValue, selfMachine.errorInfo.rawValue)
+                let innerTask = thenClosure(selfMachine.value.rawValue, selfMachine.errorInfo.rawValue)//ここで次のタスクのクロージャが呼ばれる
                 _bindInnerTask(innerTask, newMachine, progress, fulfill, _reject, configure)
             }
             
