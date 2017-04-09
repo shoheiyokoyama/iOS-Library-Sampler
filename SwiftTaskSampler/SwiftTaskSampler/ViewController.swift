@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         _ = Task<Void, String, Error> { progress, fulfill, reject, configure in
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
                 fulfill("OK")
+                reject()
             }
         }
         .then { string -> Bool in
