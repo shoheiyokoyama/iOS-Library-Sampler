@@ -146,6 +146,8 @@ extension ViewController {
                 print("Change subject")
             }
             .shareReplay(1)//publish + refCount + replay
+        //obserbeする前に値が発行されていた場合に、1キャッシュしているのでsubscribeした時に値が来るようになる(要検討
+        
     }
     
     func observeShareReplayLatestWhileConnected() {
@@ -154,7 +156,7 @@ extension ViewController {
                 print("Change subject")
             }
             .shareReplayLatestWhileConnected()//publish + refCount + replay
-            /*
+        /*
          - same as driver
          - subscribe(connect)中ではないと最後の値が取れない
          */
