@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let request = APIRequest()
         Session.send(request) { result in
             switch result {

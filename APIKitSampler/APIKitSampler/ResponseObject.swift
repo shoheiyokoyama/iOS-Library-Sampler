@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct ResponseObject  {
+struct ResponseObject {
     
     init?() {
         

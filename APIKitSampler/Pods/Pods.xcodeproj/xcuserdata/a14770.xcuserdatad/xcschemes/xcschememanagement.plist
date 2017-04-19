@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Himotoki.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-APIKitSampler.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,6 +47,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3CAF2DFADEB8F0738869A90E9E89E526</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3DFA882B2A24F4EF1C38B898614B6F80</key>
 		<dict>
 			<key>primary</key>
@@ -52,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C0BBEF067936A7D1B985B528B99DFAA2</key>
+		<key>D81A65E0490BBFFA2A66BFA273042CEC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
