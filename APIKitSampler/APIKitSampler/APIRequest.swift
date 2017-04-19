@@ -17,7 +17,7 @@ struct APIRequest: BaseAPI {
     }
     
     var path: String {
-        return "/rate_limit"
+        return "/message/1"
     }
     
     func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {

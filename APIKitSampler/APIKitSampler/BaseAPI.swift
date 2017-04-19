@@ -15,6 +15,6 @@ protocol BaseAPI: Request {
 
 extension BaseAPI {
     var baseURL: URL {
-        return URL(string: "https://api.github.com")!
+        return URL(string: "http://35.187.198.109:8080")!
     }
 }
