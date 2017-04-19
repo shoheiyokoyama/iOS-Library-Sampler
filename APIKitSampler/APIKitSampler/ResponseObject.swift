@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import Himotoki
 
-struct ResponseObject {
+struct ResponseObject: Decodable {
+    let channelID: String
+    let imageURL: String
     
-    init?() {
-        
+    static func decode(_ e: Extractor) throws -> ResponseObject {
+        return try ResponseObject(
+            channelID: e <| "channel_id",
+            imageURL: e <| "image_url"
+        )
     }
 }

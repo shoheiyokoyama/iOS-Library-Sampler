@@ -22,7 +22,7 @@ struct APIRequest: BaseAPI {
     
     func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
         guard let dictionary = object as? [String: AnyObject],
-            let object = ResponseObject() else {
+            let object = try? ResponseObject.decodeValue(dictionary) else {
                 throw NSError()
         }
         
