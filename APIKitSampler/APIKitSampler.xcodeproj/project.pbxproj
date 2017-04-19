@@ -17,6 +17,9 @@
 		E0244DC71E9DCA4A0008C757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0244DC51E9DCA4A0008C757 /* LaunchScreen.storyboard */; };
 		E0244DD21E9DCA4A0008C757 /* APIKitSamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0244DD11E9DCA4A0008C757 /* APIKitSamplerTests.swift */; };
 		E0244DDD1E9DCA4A0008C757 /* APIKitSamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0244DDC1E9DCA4A0008C757 /* APIKitSamplerUITests.swift */; };
+		E0A29E421EA707EA00997381 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A29E411EA707EA00997381 /* BaseAPI.swift */; };
+		E0A29E441EA7084000997381 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A29E431EA7084000997381 /* ResponseObject.swift */; };
+		E0A29E461EA7088300997381 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A29E451EA7088300997381 /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		E0244DD81E9DCA4A0008C757 /* APIKitSamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIKitSamplerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0244DDC1E9DCA4A0008C757 /* APIKitSamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKitSamplerUITests.swift; sourceTree = "<group>"; };
 		E0244DDE1E9DCA4A0008C757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0A29E411EA707EA00997381 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		E0A29E431EA7084000997381 /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
+		E0A29E451EA7088300997381 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,9 @@
 				E0244DC31E9DCA4A0008C757 /* Assets.xcassets */,
 				E0244DC51E9DCA4A0008C757 /* LaunchScreen.storyboard */,
 				E0244DC81E9DCA4A0008C757 /* Info.plist */,
+				E0A29E411EA707EA00997381 /* BaseAPI.swift */,
+				E0A29E431EA7084000997381 /* ResponseObject.swift */,
+				E0A29E451EA7088300997381 /* APIRequest.swift */,
 			);
 			path = APIKitSampler;
 			sourceTree = "<group>";
@@ -446,7 +455,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A29E421EA707EA00997381 /* BaseAPI.swift in Sources */,
+				E0A29E441EA7084000997381 /* ResponseObject.swift in Sources */,
 				E0244DBF1E9DCA4A0008C757 /* ViewController.swift in Sources */,
+				E0A29E461EA7088300997381 /* APIRequest.swift in Sources */,
 				E0244DBD1E9DCA4A0008C757 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,6 +710,7 @@
 				E0244DE31E9DCA4A0008C757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0244DE41E9DCA4A0008C757 /* Build configuration list for PBXNativeTarget "APIKitSamplerTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +719,7 @@
 				E0244DE61E9DCA4A0008C757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0244DE71E9DCA4A0008C757 /* Build configuration list for PBXNativeTarget "APIKitSamplerUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +728,7 @@
 				E0244DE91E9DCA4A0008C757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

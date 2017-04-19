@@ -142,6 +142,7 @@ extension ViewController {
     //TODO: - shareReplay, shareReplayLatestWhileConnected, driver
     func observeShareReplay() {
         let observable = numberSubject.asObservable()
+            .observeOn(<#T##scheduler: ImmediateSchedulerType##ImmediateSchedulerType#>)
             .map { _ in
                 print("Change subject")
             }
