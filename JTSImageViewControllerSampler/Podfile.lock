@@ -1,0 +1,12 @@
+PODS:
+  - JTSImageViewController (1.5.1)
+
+DEPENDENCIES:
+  - JTSImageViewController
+
+SPEC CHECKSUMS:
+  JTSImageViewController: 1f8ce1cc93dab0d0af8e53badeea7528560cfec9
+
+PODFILE CHECKSUM: 6de55f69fee5bee7331a3502e20a9c050b7e6d40
+
+COCOAPODS: 1.2.1
