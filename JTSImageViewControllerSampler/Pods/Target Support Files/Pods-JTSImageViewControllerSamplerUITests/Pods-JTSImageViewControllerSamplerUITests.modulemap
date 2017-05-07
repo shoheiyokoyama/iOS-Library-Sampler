@@ -1,0 +1,6 @@
+framework module Pods_JTSImageViewControllerSamplerUITests {
+  umbrella header "Pods-JTSImageViewControllerSamplerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

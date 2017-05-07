@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F9BB015AC643EC55A990EA8 /* Pods_JTSImageViewControllerSamplerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD03A5C9260AEA9AD17C780 /* Pods_JTSImageViewControllerSamplerTests.framework */; };
+		7D9A8A8A590FBC5753363F5B /* Pods_JTSImageViewControllerSampler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD481E58CB5B0ABD8849A6BC /* Pods_JTSImageViewControllerSampler.framework */; };
+		E0C06CAE1EB012590005026D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C06CAD1EB012590005026D /* AppDelegate.swift */; };
+		E0C06CB01EB012590005026D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C06CAF1EB012590005026D /* ViewController.swift */; };
+		E0C06CB31EB012590005026D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C06CB11EB012590005026D /* Main.storyboard */; };
+		E0C06CB51EB0125A0005026D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C06CB41EB0125A0005026D /* Assets.xcassets */; };
+		E0C06CB81EB0125A0005026D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C06CB61EB0125A0005026D /* LaunchScreen.storyboard */; };
+		E0C06CC31EB0125A0005026D /* JTSImageViewControllerSamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C06CC21EB0125A0005026D /* JTSImageViewControllerSamplerTests.swift */; };
+		E0C06CCE1EB0125A0005026D /* JTSImageViewControllerSamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C06CCD1EB0125A0005026D /* JTSImageViewControllerSamplerUITests.swift */; };
+		F34E41E0B7BE3578E137A0A6 /* Pods_JTSImageViewControllerSamplerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6EC9717150573335777067 /* Pods_JTSImageViewControllerSamplerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0C06CBF1EB0125A0005026D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0C06CA21EB012590005026D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0C06CA91EB012590005026D;
+			remoteInfo = JTSImageViewControllerSampler;
+		};
+		E0C06CCA1EB0125A0005026D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0C06CA21EB012590005026D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0C06CA91EB012590005026D;
+			remoteInfo = JTSImageViewControllerSampler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F6EC9717150573335777067 /* Pods_JTSImageViewControllerSamplerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTSImageViewControllerSamplerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA603E35D0798F9F929FD27 /* Pods-JTSImageViewControllerSampler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTSImageViewControllerSampler.release.xcconfig"; path = "Pods/Target Support Files/Pods-JTSImageViewControllerSampler/Pods-JTSImageViewControllerSampler.release.xcconfig"; sourceTree = "<group>"; };
+		71C5E92F206639D3A17C503C /* Pods-JTSImageViewControllerSamplerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTSImageViewControllerSamplerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JTSImageViewControllerSamplerUITests/Pods-JTSImageViewControllerSamplerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD481E58CB5B0ABD8849A6BC /* Pods_JTSImageViewControllerSampler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTSImageViewControllerSampler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE50AE0E4345529E5F8E320A /* Pods-JTSImageViewControllerSamplerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTSImageViewControllerSamplerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JTSImageViewControllerSamplerTests/Pods-JTSImageViewControllerSamplerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9B82D9D5F0B3D767BBBD747 /* Pods-JTSImageViewControllerSamplerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTSImageViewControllerSamplerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JTSImageViewControllerSamplerTests/Pods-JTSImageViewControllerSamplerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C08CE9D625DCA59CF4A5B7E5 /* Pods-JTSImageViewControllerSamplerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTSImageViewControllerSamplerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JTSImageViewControllerSamplerUITests/Pods-JTSImageViewControllerSamplerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CCD03A5C9260AEA9AD17C780 /* Pods_JTSImageViewControllerSamplerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTSImageViewControllerSamplerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0BF9B45B81E38647BC4EEF /* Pods-JTSImageViewControllerSampler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTSImageViewControllerSampler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JTSImageViewControllerSampler/Pods-JTSImageViewControllerSampler.debug.xcconfig"; sourceTree = "<group>"; };
+		E0C06CAA1EB012590005026D /* JTSImageViewControllerSampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTSImageViewControllerSampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0C06CAD1EB012590005026D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0C06CAF1EB012590005026D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0C06CB21EB012590005026D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0C06CB41EB0125A0005026D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0C06CB71EB0125A0005026D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0C06CB91EB0125A0005026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0C06CBE1EB0125A0005026D /* JTSImageViewControllerSamplerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTSImageViewControllerSamplerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0C06CC21EB0125A0005026D /* JTSImageViewControllerSamplerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTSImageViewControllerSamplerTests.swift; sourceTree = "<group>"; };
+		E0C06CC41EB0125A0005026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0C06CC91EB0125A0005026D /* JTSImageViewControllerSamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTSImageViewControllerSamplerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0C06CCD1EB0125A0005026D /* JTSImageViewControllerSamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTSImageViewControllerSamplerUITests.swift; sourceTree = "<group>"; };
+		E0C06CCF1EB0125A0005026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0C06CA71EB012590005026D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D9A8A8A590FBC5753363F5B /* Pods_JTSImageViewControllerSampler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C06CBB1EB0125A0005026D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9BB015AC643EC55A990EA8 /* Pods_JTSImageViewControllerSamplerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C06CC61EB0125A0005026D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34E41E0B7BE3578E137A0A6 /* Pods_JTSImageViewControllerSamplerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45DDE7269F3120BFF457D88D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD481E58CB5B0ABD8849A6BC /* Pods_JTSImageViewControllerSampler.framework */,
+				CCD03A5C9260AEA9AD17C780 /* Pods_JTSImageViewControllerSamplerTests.framework */,
+				3F6EC9717150573335777067 /* Pods_JTSImageViewControllerSamplerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C4D8AB94C1D00427BFB2D0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE0BF9B45B81E38647BC4EEF /* Pods-JTSImageViewControllerSampler.debug.xcconfig */,
+				5EA603E35D0798F9F929FD27 /* Pods-JTSImageViewControllerSampler.release.xcconfig */,
+				B9B82D9D5F0B3D767BBBD747 /* Pods-JTSImageViewControllerSamplerTests.debug.xcconfig */,
+				AE50AE0E4345529E5F8E320A /* Pods-JTSImageViewControllerSamplerTests.release.xcconfig */,
+				71C5E92F206639D3A17C503C /* Pods-JTSImageViewControllerSamplerUITests.debug.xcconfig */,
+				C08CE9D625DCA59CF4A5B7E5 /* Pods-JTSImageViewControllerSamplerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0C06CA11EB012590005026D = {
+			isa = PBXGroup;
+			children = (
+				E0C06CAC1EB012590005026D /* JTSImageViewControllerSampler */,
+				E0C06CC11EB0125A0005026D /* JTSImageViewControllerSamplerTests */,
+				E0C06CCC1EB0125A0005026D /* JTSImageViewControllerSamplerUITests */,
+				E0C06CAB1EB012590005026D /* Products */,
+				8C4D8AB94C1D00427BFB2D0F /* Pods */,
+				45DDE7269F3120BFF457D88D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0C06CAB1EB012590005026D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0C06CAA1EB012590005026D /* JTSImageViewControllerSampler.app */,
+				E0C06CBE1EB0125A0005026D /* JTSImageViewControllerSamplerTests.xctest */,
+				E0C06CC91EB0125A0005026D /* JTSImageViewControllerSamplerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0C06CAC1EB012590005026D /* JTSImageViewControllerSampler */ = {
+			isa = PBXGroup;
+			children = (
+				E0C06CAD1EB012590005026D /* AppDelegate.swift */,
+				E0C06CAF1EB012590005026D /* ViewController.swift */,
+				E0C06CB11EB012590005026D /* Main.storyboard */,
+				E0C06CB41EB0125A0005026D /* Assets.xcassets */,
+				E0C06CB61EB0125A0005026D /* LaunchScreen.storyboard */,
+				E0C06CB91EB0125A0005026D /* Info.plist */,
+			);
+			path = JTSImageViewControllerSampler;
+			sourceTree = "<group>";
+		};
+		E0C06CC11EB0125A0005026D /* JTSImageViewControllerSamplerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0C06CC21EB0125A0005026D /* JTSImageViewControllerSamplerTests.swift */,
+				E0C06CC41EB0125A0005026D /* Info.plist */,
+			);
+			path = JTSImageViewControllerSamplerTests;
+			sourceTree = "<group>";
+		};
+		E0C06CCC1EB0125A0005026D /* JTSImageViewControllerSamplerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0C06CCD1EB0125A0005026D /* JTSImageViewControllerSamplerUITests.swift */,
+				E0C06CCF1EB0125A0005026D /* Info.plist */,
+			);
+			path = JTSImageViewControllerSamplerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0C06CA91EB012590005026D /* JTSImageViewControllerSampler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0C06CD21EB0125A0005026D /* Build configuration list for PBXNativeTarget "JTSImageViewControllerSampler" */;
+			buildPhases = (
+				5C7159A236C9BC3CD1799073 /* [CP] Check Pods Manifest.lock */,
+				E0C06CA61EB012590005026D /* Sources */,
+				E0C06CA71EB012590005026D /* Frameworks */,
+				E0C06CA81EB012590005026D /* Resources */,
+				DD201DA0705065C5BC1952E9 /* [CP] Embed Pods Frameworks */,
+				7AC5A094C071D19CDBC55B34 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTSImageViewControllerSampler;
+			productName = JTSImageViewControllerSampler;
+			productReference = E0C06CAA1EB012590005026D /* JTSImageViewControllerSampler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0C06CBD1EB0125A0005026D /* JTSImageViewControllerSamplerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0C06CD51EB0125A0005026D /* Build configuration list for PBXNativeTarget "JTSImageViewControllerSamplerTests" */;
+			buildPhases = (
+				E1D6C5CD130E0E549AAFC78E /* [CP] Check Pods Manifest.lock */,
+				E0C06CBA1EB0125A0005026D /* Sources */,
+				E0C06CBB1EB0125A0005026D /* Frameworks */,
+				E0C06CBC1EB0125A0005026D /* Resources */,
+				17F97F13DA3CFC1FF62E27DD /* [CP] Embed Pods Frameworks */,
+				8C1EBECDFD7852D7A4627775 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0C06CC01EB0125A0005026D /* PBXTargetDependency */,
+			);
+			name = JTSImageViewControllerSamplerTests;
+			productName = JTSImageViewControllerSamplerTests;
+			productReference = E0C06CBE1EB0125A0005026D /* JTSImageViewControllerSamplerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0C06CC81EB0125A0005026D /* JTSImageViewControllerSamplerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0C06CD81EB0125A0005026D /* Build configuration list for PBXNativeTarget "JTSImageViewControllerSamplerUITests" */;
+			buildPhases = (
+				0D4F9F7C66F7D85157F20A0C /* [CP] Check Pods Manifest.lock */,
+				E0C06CC51EB0125A0005026D /* Sources */,
+				E0C06CC61EB0125A0005026D /* Frameworks */,
+				E0C06CC71EB0125A0005026D /* Resources */,
+				2A462D745E0B5603051EF751 /* [CP] Embed Pods Frameworks */,
+				543FDDBBC7484B3B53EAFBC0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0C06CCB1EB0125A0005026D /* PBXTargetDependency */,
+			);
+			name = JTSImageViewControllerSamplerUITests;
+			productName = JTSImageViewControllerSamplerUITests;
+			productReference = E0C06CC91EB0125A0005026D /* JTSImageViewControllerSamplerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0C06CA21EB012590005026D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Shohei Yokoyama";
+				TargetAttributes = {
+					E0C06CA91EB012590005026D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					E0C06CBD1EB0125A0005026D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0C06CA91EB012590005026D;
+					};
+					E0C06CC81EB0125A0005026D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0C06CA91EB012590005026D;
+					};
+				};
+			};
+			buildConfigurationList = E0C06CA51EB012590005026D /* Build configuration list for PBXProject "JTSImageViewControllerSampler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0C06CA11EB012590005026D;
+			productRefGroup = E0C06CAB1EB012590005026D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0C06CA91EB012590005026D /* JTSImageViewControllerSampler */,
+				E0C06CBD1EB0125A0005026D /* JTSImageViewControllerSamplerTests */,
+				E0C06CC81EB0125A0005026D /* JTSImageViewControllerSamplerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0C06CA81EB012590005026D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0C06CB81EB0125A0005026D /* LaunchScreen.storyboard in Resources */,
+				E0C06CB51EB0125A0005026D /* Assets.xcassets in Resources */,
+				E0C06CB31EB012590005026D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C06CBC1EB0125A0005026D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C06CC71EB0125A0005026D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D4F9F7C66F7D85157F20A0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		17F97F13DA3CFC1FF62E27DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JTSImageViewControllerSamplerTests/Pods-JTSImageViewControllerSamplerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A462D745E0B5603051EF751 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JTSImageViewControllerSamplerUITests/Pods-JTSImageViewControllerSamplerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		543FDDBBC7484B3B53EAFBC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JTSImageViewControllerSamplerUITests/Pods-JTSImageViewControllerSamplerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C7159A236C9BC3CD1799073 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AC5A094C071D19CDBC55B34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JTSImageViewControllerSampler/Pods-JTSImageViewControllerSampler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C1EBECDFD7852D7A4627775 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JTSImageViewControllerSamplerTests/Pods-JTSImageViewControllerSamplerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD201DA0705065C5BC1952E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JTSImageViewControllerSampler/Pods-JTSImageViewControllerSampler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1D6C5CD130E0E549AAFC78E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0C06CA61EB012590005026D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0C06CB01EB012590005026D /* ViewController.swift in Sources */,
+				E0C06CAE1EB012590005026D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C06CBA1EB0125A0005026D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0C06CC31EB0125A0005026D /* JTSImageViewControllerSamplerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C06CC51EB0125A0005026D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0C06CCE1EB0125A0005026D /* JTSImageViewControllerSamplerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0C06CC01EB0125A0005026D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0C06CA91EB012590005026D /* JTSImageViewControllerSampler */;
+			targetProxy = E0C06CBF1EB0125A0005026D /* PBXContainerItemProxy */;
+		};
+		E0C06CCB1EB0125A0005026D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0C06CA91EB012590005026D /* JTSImageViewControllerSampler */;
+			targetProxy = E0C06CCA1EB0125A0005026D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0C06CB11EB012590005026D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0C06CB21EB012590005026D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0C06CB61EB0125A0005026D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0C06CB71EB0125A0005026D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0C06CD01EB0125A0005026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0C06CD11EB0125A0005026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0C06CD31EB0125A0005026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE0BF9B45B81E38647BC4EEF /* Pods-JTSImageViewControllerSampler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JTSImageViewControllerSampler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoheiyokoyama.JTSImageViewControllerSampler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E0C06CD41EB0125A0005026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA603E35D0798F9F929FD27 /* Pods-JTSImageViewControllerSampler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JTSImageViewControllerSampler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoheiyokoyama.JTSImageViewControllerSampler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E0C06CD61EB0125A0005026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B82D9D5F0B3D767BBBD747 /* Pods-JTSImageViewControllerSamplerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JTSImageViewControllerSamplerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoheiyokoyama.JTSImageViewControllerSamplerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTSImageViewControllerSampler.app/JTSImageViewControllerSampler";
+			};
+			name = Debug;
+		};
+		E0C06CD71EB0125A0005026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE50AE0E4345529E5F8E320A /* Pods-JTSImageViewControllerSamplerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JTSImageViewControllerSamplerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoheiyokoyama.JTSImageViewControllerSamplerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTSImageViewControllerSampler.app/JTSImageViewControllerSampler";
+			};
+			name = Release;
+		};
+		E0C06CD91EB0125A0005026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71C5E92F206639D3A17C503C /* Pods-JTSImageViewControllerSamplerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JTSImageViewControllerSamplerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoheiyokoyama.JTSImageViewControllerSamplerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JTSImageViewControllerSampler;
+			};
+			name = Debug;
+		};
+		E0C06CDA1EB0125A0005026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C08CE9D625DCA59CF4A5B7E5 /* Pods-JTSImageViewControllerSamplerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JTSImageViewControllerSamplerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoheiyokoyama.JTSImageViewControllerSamplerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JTSImageViewControllerSampler;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0C06CA51EB012590005026D /* Build configuration list for PBXProject "JTSImageViewControllerSampler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C06CD01EB0125A0005026D /* Debug */,
+				E0C06CD11EB0125A0005026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0C06CD21EB0125A0005026D /* Build configuration list for PBXNativeTarget "JTSImageViewControllerSampler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C06CD31EB0125A0005026D /* Debug */,
+				E0C06CD41EB0125A0005026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0C06CD51EB0125A0005026D /* Build configuration list for PBXNativeTarget "JTSImageViewControllerSamplerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C06CD61EB0125A0005026D /* Debug */,
+				E0C06CD71EB0125A0005026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0C06CD81EB0125A0005026D /* Build configuration list for PBXNativeTarget "JTSImageViewControllerSamplerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C06CD91EB0125A0005026D /* Debug */,
+				E0C06CDA1EB0125A0005026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0C06CA21EB012590005026D /* Project object */;
+}
