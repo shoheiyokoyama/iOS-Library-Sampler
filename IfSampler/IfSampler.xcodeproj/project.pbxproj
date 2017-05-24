@@ -17,6 +17,7 @@
 		E0AEDCFF1ED5039D00854418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0AEDCFD1ED5039D00854418 /* LaunchScreen.storyboard */; };
 		E0AEDD0A1ED5039D00854418 /* IfSamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEDD091ED5039D00854418 /* IfSamplerTests.swift */; };
 		E0AEDD151ED5039E00854418 /* IfSamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEDD141ED5039E00854418 /* IfSamplerUITests.swift */; };
+		E0AEDD311ED55B7100854418 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEDD301ED55B7100854418 /* SampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E0AEDD101ED5039D00854418 /* IfSamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IfSamplerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AEDD141ED5039E00854418 /* IfSamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfSamplerUITests.swift; sourceTree = "<group>"; };
 		E0AEDD161ED5039E00854418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0AEDD301ED55B7100854418 /* SampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		EF155F318384CFBCAACEA4D0 /* Pods-IfSamplerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IfSamplerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IfSamplerTests/Pods-IfSamplerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF73730AB9038D729DD91215 /* Pods-IfSampler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IfSampler.release.xcconfig"; path = "Pods/Target Support Files/Pods-IfSampler/Pods-IfSampler.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 				E0AEDCFB1ED5039D00854418 /* Assets.xcassets */,
 				E0AEDCFD1ED5039D00854418 /* LaunchScreen.storyboard */,
 				E0AEDD001ED5039D00854418 /* Info.plist */,
+				E0AEDD301ED55B7100854418 /* SampleViewController.swift */,
 			);
 			path = IfSampler;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 			files = (
 				E0AEDCF71ED5039D00854418 /* ViewController.swift in Sources */,
 				E0AEDCF51ED5039D00854418 /* AppDelegate.swift in Sources */,
+				E0AEDD311ED55B7100854418 /* SampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

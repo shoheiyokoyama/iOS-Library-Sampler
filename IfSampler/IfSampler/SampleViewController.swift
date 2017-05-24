@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SampleViewController.swift
 //  IfSampler
 //
 //  Created by 横山 祥平 on 2017/05/24.
@@ -9,23 +9,42 @@
 import UIKit
 import lf
 import AVFoundation
+import VideoToolbox
 
-final class ViewController: UIViewController {
+class SampleViewController: UIViewController {
 
-    @IBOutlet weak var gllfView: GLLFView!
-    @IBOutlet weak var contentview: UIView!
+    @IBOutlet weak var lfView: GLLFView!
     let rtmpConnection = RTMPConnection()
     lazy var rtmpStream: RTMPStream = RTMPStream(connection: self.rtmpConnection)
-    lazy var lfView: GLLFView = GLLFView(frame: self.contentview.frame)
+    
+    @IBAction func tapButton(_ sender: UIButton) {
+        if (sender.isSelected) {
+            UIApplication.shared.isIdleTimerDisabled = false
+            rtmpConnection.close()
+            rtmpConnection.removeEventListener(Event.RTMP_STATUS, selector:#selector(ViewController.rtmpStatusHandler(_:)), observer: self)
+            sender.setTitle("●", for: UIControlState())
+        } else {
+            UIApplication.shared.isIdleTimerDisabled = true
+            rtmpConnection.addEventListener(Event.RTMP_STATUS, selector:#selector(ViewController.rtmpStatusHandler(_:)), observer: self)
+            rtmpConnection.connect("rtmp://inst12.tk/hls")
+            sender.setTitle("■", for: UIControlState())
+        }
+        sender.isSelected = !sender.isSelected
+    }
     
     var currentPosition: AVCaptureDevicePosition = .back
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.layoutSubviews()
-        view.setNeedsLayout()
-
+        do {
+            try AVAudioSession.sharedInstance().setPreferredSampleRate(44_100)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try AVAudioSession.sharedInstance().setMode(AVAudioSessionModeDefault)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+        }
+        
         rtmpStream.syncOrientation = true
         rtmpStream.captureSettings = [
             "sessionPreset": AVCaptureSessionPreset1280x720,
@@ -35,31 +54,16 @@ final class ViewController: UIViewController {
         rtmpStream.videoSettings = [
             "width": 1280,
             "height": 720,
+            //"profileLevel": kVTProfileLevel_H264_Baseline_5_0,
         ]
         rtmpStream.audioSettings = [
             "sampleRate": 44_100
         ]
         
-        lfView.videoGravity = AVLayerVideoGravityResize
-        contentview.addSubview(lfView)
-        
-        //rtmpStream.attachCamera(DeviceUtil.device(withPosition: currentPosition)) { error in
-        //    print(error)
-        //}
-        
         rtmpStream.captureSettings["fps"] = 15
-        
-        let videoBitrate: CGFloat = 320
-        rtmpStream.videoSettings["bitrate"] = videoBitrate * 1024
-        let audioBitrate: CGFloat = 64
-        rtmpStream.audioSettings["bitrate"] = audioBitrate * 1024
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        view.layoutSubviews()
-        view.setNeedsLayout()
+
+        rtmpStream.videoSettings["bitrate"] = RTMPStream.defaultVideoBitrate
+        rtmpStream.audioSettings["bitrate"] = RTMPStream.defaultAudioBitrate
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -81,21 +85,6 @@ final class ViewController: UIViewController {
         lfView.attachStream(rtmpStream)
     }
     
-    @IBAction func tap(_ sender: UIButton) {
-        if (sender.isSelected) {
-            //UIApplication.shared.isIdleTimerDisabled = false
-            rtmpConnection.close()
-            rtmpConnection.removeEventListener(Event.RTMP_STATUS, selector:#selector(ViewController.rtmpStatusHandler(_:)), observer: self)
-            sender.setTitle("●", for: UIControlState())
-        } else {
-            //UIApplication.shared.isIdleTimerDisabled = true
-            rtmpConnection.addEventListener(Event.RTMP_STATUS, selector:#selector(ViewController.rtmpStatusHandler(_:)), observer: self)
-            rtmpConnection.connect("rtmp://inst12.tk/hls")
-            sender.setTitle("■", for: UIControlState())
-        }
-        sender.isSelected = !sender.isSelected
-    }
-    
     func rtmpStatusHandler(_ notification:Notification) {
         let e:Event = Event.from(notification)
         if let data:ASObject = e.data as? ASObject , let code:String = data["code"] as? String, let description: String = data["description"] as? String  {
@@ -114,4 +103,3 @@ final class ViewController: UIViewController {
         print("\(rtmpStream.currentFPS)")
     }
 }
-

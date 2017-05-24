@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uSX-ki-0Rr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -49,6 +49,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Sample View Controller-->
+        <scene sceneID="nQO-ck-JbY">
+            <objects>
+                <viewController id="uSX-ki-0Rr" customClass="SampleViewController" customModule="IfSampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PDx-EA-65y"/>
+                        <viewControllerLayoutGuide type="bottom" id="hCZ-cA-JIT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ng9-Y4-QEt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rF5-jb-nRL" customClass="GLLFView" customModule="lf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rn-MO-v1z">
+                                <rect key="frame" x="164" y="607" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="uSX-ki-0Rr" eventType="touchUpInside" id="wt5-Ab-cb8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Rn-MO-v1z" firstAttribute="centerX" secondItem="Ng9-Y4-QEt" secondAttribute="centerX" id="2gd-5e-8xM"/>
+                            <constraint firstItem="rF5-jb-nRL" firstAttribute="top" secondItem="Ng9-Y4-QEt" secondAttribute="top" id="TBW-kd-Xg7"/>
+                            <constraint firstAttribute="bottom" secondItem="rF5-jb-nRL" secondAttribute="bottom" id="hv5-gx-D5Q"/>
+                            <constraint firstItem="rF5-jb-nRL" firstAttribute="leading" secondItem="Ng9-Y4-QEt" secondAttribute="leading" id="t2n-4W-5lC"/>
+                            <constraint firstAttribute="trailing" secondItem="rF5-jb-nRL" secondAttribute="trailing" id="tRI-AF-ua1"/>
+                            <constraint firstItem="hCZ-cA-JIT" firstAttribute="top" secondItem="5Rn-MO-v1z" secondAttribute="bottom" constant="30" id="uBU-je-LUX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lfView" destination="rF5-jb-nRL" id="NZP-1z-L4f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9O-Ja-ktI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="63"/>
         </scene>
     </scenes>
 </document>
