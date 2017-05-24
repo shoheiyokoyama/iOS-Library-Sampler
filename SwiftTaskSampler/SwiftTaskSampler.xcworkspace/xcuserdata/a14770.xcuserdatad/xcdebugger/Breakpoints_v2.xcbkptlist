@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftTask/SwiftTask/SwiftTask.swift"
+            timestampString = "516154274.405592"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "setup(weakified:paused:_initClosure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftTask.Task.(setup (weakified : Swift.Bool, paused : Swift.Bool, _initClosure : (SwiftTask._StateMachine&lt;A, B, C&gt;, (A) -&gt; (), (B) -&gt; (), (error : Swift.Optional&lt;C&gt;, isCancelled : Swift.Bool) -&gt; (), SwiftTask.TaskConfiguration) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "SwiftTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a14770/Development/iOS/iOS-Library-Sampler/SwiftTaskSampler/Pods/SwiftTask/SwiftTask/SwiftTask.swift"
+                  timestampString = "516154350.186801"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "229"
+                  endingLineNumber = "229"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftTask.Task.(setup (weakified : Swift.Bool, paused : Swift.Bool, _initClosure : (SwiftTask._StateMachine&lt;A, B, C&gt;, (A) -&gt; (), (B) -&gt; (), (error : Swift.Optional&lt;C&gt;, isCancelled : Swift.Bool) -&gt; (), SwiftTask.TaskConfiguration) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "SwiftTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a14770/Development/iOS/iOS-Library-Sampler/SwiftTaskSampler/Pods/SwiftTask/SwiftTask/SwiftTask.swift"
+                  timestampString = "516154350.189312"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "229"
+                  endingLineNumber = "229"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
