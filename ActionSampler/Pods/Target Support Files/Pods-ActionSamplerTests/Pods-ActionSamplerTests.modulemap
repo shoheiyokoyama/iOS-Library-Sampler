@@ -1,0 +1,6 @@
+framework module Pods_ActionSamplerTests {
+  umbrella header "Pods-ActionSamplerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
