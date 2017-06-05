@@ -7,19 +7,116 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import Action
 
-class ViewController: UIViewController {
+enum SharedInput {
+    case button(String)
+    case barButton
+}
 
+final class ViewController: UIViewController {
+
+    @IBOutlet private weak var button1: UIButton!
+    @IBOutlet private weak var button2: UIButton!
+    @IBOutlet private weak var topButton: UIButton!
+    
+    @IBOutlet private weak var indicator: UIActivityIndicatorView!
+    
+    private let disposeBag = DisposeBag()
+    
+    let sharedAction = Action<SharedInput, String> { input in
+        switch input {
+        case .barButton: return Observable.just("UIBarButtonItem with 3 seconds delay").delaySubscription(3, scheduler: MainScheduler.instance)
+        case .button(let title): return .just("UIButton " + title)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var leftButton = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: 40, height: 24)))
+        leftButton.setTitle("L", for: .normal)
+        leftButton.setTitleColor(.black, for: .normal)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftButton)
+        
+        var rightButton = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: 40, height: 24)))
+        rightButton.setTitle("R", for: .normal)
+        rightButton.setTitleColor(.black, for: .normal)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightButton)
+        
+        // Demo: add an action to a button in the view
+        let action = CocoaAction {
+            print("Button was pressed, showing an alert and keeping the activity indicator spinning while alert is displayed")
+            return Observable.create { [weak self] observer -> Disposable in
+                // Demo: show an alert and complete the view's button action once the alert's OK button is pressed
+                let alertController = UIAlertController(title: "Hello world", message: "This alert was triggered by a button action", preferredStyle: .alert)
+                var ok = UIAlertAction.Action("OK", style: .default)
+                ok.rx.action = CocoaAction {
+                    print("Alert's OK button was pressed")
+                    observer.onCompleted()
+                    return .empty()
+                }
+                alertController.addAction(ok)
+                self?.present(alertController, animated: true, completion: nil)
+                
+                return Disposables.create()
+            }
+        }
+        
+        topButton.rx.action = action
+        
+        // Demo: add an action to a UIBarButtonItem in the navigation item
+        rightButton.rx.action = CocoaAction {
+            print("Bar button item was pressed, simulating a 2 second action")
+            return Observable.empty().delaySubscription(2, scheduler: MainScheduler.instance)
+        }
+        
+        // Demo: observe the output of both actions, spin an activity indicator
+        // while performing the work
+        Observable.combineLatest(
+            topButton.rx.action!.executing,
+            rightButton.rx.action!.executing) { a,b in
+                // we combine two boolean observable and output one boolean
+                return a || b
+            }
+            .distinctUntilChanged()
+            .subscribe(onNext: { [weak self] executing in
+                // every time the execution status changes, spin an activity indicator
+                //self?.workingLabel.isHidden = !executing
+                if executing {
+                    self?.indicator.startAnimating()
+                }
+                else {
+                    self?.indicator.stopAnimating()
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        button1.rx.bind(to: sharedAction, input: .button("Button 1"))
+        
+        button2.rx.bind(to: sharedAction) { _ in
+            return .button("Button 2")
+        }
+        
+        leftButton.rx.bind(to: sharedAction, input: .barButton)
+        
+        sharedAction.executing.debounce(0, scheduler: MainScheduler.instance).subscribe(onNext: { [weak self] executing in
+            if executing {
+                self?.indicator.startAnimating()
+            }
+            else {
+                self?.indicator.stopAnimating()
+            }
+        })
+        .disposed(by: disposeBag)
+        
+        // Needs suscribe sharedAction
+        sharedAction.elements.subscribe(onNext: { string in
+            print(string  + " pressed")
+        })
+        .disposed(by: disposeBag)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

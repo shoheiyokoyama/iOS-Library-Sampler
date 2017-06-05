@@ -242,6 +242,7 @@
 				TargetAttributes = {
 					E07B8CE11EE54802004A0006 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3KU3GWQLG8;
 						ProvisioningStyle = Automatic;
 					};
 					E07B8CF51EE54802004A0006 = {
@@ -602,6 +603,7 @@
 			baseConfigurationReference = DDB2BBE56D43868246A459BB /* Pods-ActionSampler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3KU3GWQLG8;
 				INFOPLIST_FILE = ActionSampler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shoheiyokoyama.ActionSampler;
@@ -615,6 +617,7 @@
 			baseConfigurationReference = 460C5361B277F115DF0CEF92 /* Pods-ActionSampler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3KU3GWQLG8;
 				INFOPLIST_FILE = ActionSampler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shoheiyokoyama.ActionSampler;
@@ -700,6 +703,7 @@
 				E07B8D0C1EE54802004A0006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E07B8D0D1EE54802004A0006 /* Build configuration list for PBXNativeTarget "ActionSamplerTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +712,7 @@
 				E07B8D0F1EE54802004A0006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E07B8D101EE54802004A0006 /* Build configuration list for PBXNativeTarget "ActionSamplerUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +721,7 @@
 				E07B8D121EE54802004A0006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
