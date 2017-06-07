@@ -6,23 +6,33 @@
 	<dict>
 		<key>Pods-RxSwiftSampler.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>RxSwift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>42EE73D621790AF7B92061475F2B6959</key>
+		<key>5678B30EE4B9C2E4940AD224AB1FDB93</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AD6D42EEFCA8C178D4CCD8E774A58BCA</key>
+		<key>9BB976A72EBB172C577471F7A59E1FB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB5CEFDDE87FFB8683AAC5D74A4A4056</key>
 		<dict>
 			<key>primary</key>
 			<true/>
