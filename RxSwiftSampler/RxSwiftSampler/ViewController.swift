@@ -6,6 +6,8 @@
 //  Copyright © 2017年 Shohei. All rights reserved.
 //
 
+// http://cocoadocs.org/docsets/RxSwift/2.6.0/RxSwift/
+
 import UIKit
 import RxSwift
 
@@ -19,14 +21,62 @@ class ViewController: UIViewController {
         
         //obserbeCold()
         //obserbeHot()
-        convertHot()
+        //convertHot()
+        observeSubject()
     }
 }
 
 // MARK: - Subject
+// https://medium.com/vinelab-tech/rxswift-subject-types-264c780e2865
+// reactive x subject
+// https://www.google.co.jp/search?q=reactivex+subject&oq=reactivex+subject&aqs=chrome..69i57j0j69i60.4394j0j4&sourceid=chrome&ie=UTF-8
+//http://cocoadocs.org/docsets/RxSwift/2.6.0/RxSwift/Subjects.html
+
 extension ViewController {
-    func test() {
+    func observeSubject() {
         
+        // it emits only new items to its subscriber.
+        // element added to the subject before subscription will be not emitted.
+        let publishSubject = PublishSubject<String>()
+        
+        publishSubject.onNext("before subscription: PublishSubject") // not emit
+        
+        publishSubject
+            .subscribe(onNext: {
+                print($0)
+            })
+            .disposed(by: disposeBug)
+        
+        publishSubject.onNext("after subscription: PublishSubject")
+        
+        
+        // it will receive the most recent element in the sequence
+        let behaviorSubject = BehaviorSubject<String>(value: "Initial value")
+        
+        // If send element before subscription, behaviorSubject receive this element only when subscription.
+        //behaviorSubject.onNext("before subscription: BehaviorSubject")
+        
+        behaviorSubject
+            .subscribe(onNext: {
+                print($0)
+            })
+            .disposed(by: disposeBug)
+        
+        behaviorSubject.onNext("after subscription: BehaviorSubject")
+        
+        let replaySubject = ReplaySubject<String>.create(bufferSize: 2)
+        replaySubject.onNext("1 before subscription: ReplaySubject")
+        replaySubject.onNext("2 before subscription: ReplaySubject")
+        
+        replaySubject
+            .subscribe(onNext: {
+                print($0)
+            })
+            .disposed(by: disposeBug)
+        
+        replaySubject.onNext("after subscription: ReplaySubject")
+        
+        //TODO: - Variable
     }
 }
 
