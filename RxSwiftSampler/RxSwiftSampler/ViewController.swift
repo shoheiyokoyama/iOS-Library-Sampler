@@ -23,6 +23,13 @@ class ViewController: UIViewController {
     }
 }
 
+// MARK: - Subject
+extension ViewController {
+    func test() {
+        
+    }
+}
+
 //MARK: - Hot and Cold
 extension ViewController {
     
@@ -37,13 +44,13 @@ extension ViewController {
             .subscribe(onNext: {
                 print("subscribe1")
             })
-            .addDisposableTo(disposeBug)
+            .disposed(by: disposeBug)
         
         observable
             .subscribe(onNext: { number in
                 print("subscribe2")
             })
-            .addDisposableTo(disposeBug)
+            .disposed(by: disposeBug)
         
         // stream count is two
         numberSubject.onNext(1)
@@ -79,7 +86,7 @@ extension ViewController {
             .subscribe(onNext: { number in
                 print("subscribe2")
             })
-            .addDisposableTo(disposeBug)
+            .disposed(by: disposeBug)
         
         
         // stream count is one
@@ -132,7 +139,7 @@ extension ViewController {
             .subscribe(onNext: { number in
                 print("subscribe")
             })
-            .addDisposableTo(disposeBug)
+            .disposed(by: disposeBug)
         
         numberSubject.onNext(1)
         //Change subject
@@ -142,7 +149,6 @@ extension ViewController {
     //TODO: - shareReplay, shareReplayLatestWhileConnected, driver
     func observeShareReplay() {
         let observable = numberSubject.asObservable()
-            .observeOn(<#T##scheduler: ImmediateSchedulerType##ImmediateSchedulerType#>)
             .map { _ in
                 print("Change subject")
             }
